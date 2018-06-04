@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A7A496DFB572EECFBB6CC9396663FEE /* Pods-Appear-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3C3E15D96F79E6A7C5DE86550AFA0 /* Pods-Appear-dummy.m */; };
+		176127A4857051BD179F565E2BB0B76C /* LIHSliderItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88431D04701664817B2D002EF706816 /* LIHSliderItemViewController.swift */; };
+		257591DD430A99371C1C0B9217465F91 /* LIHSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00888268B6E2D94BDFC0C973F486AB1 /* LIHSliderViewController.swift */; };
+		3BF6C40AA5F071BADCE2BB48773E8C4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3FA6EEFF5B24FE1F352E4CBEC03EE21B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		45F8A5A41D13A5366179A96AEFFAC9E3 /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C769B7A2707A1E2C94B5C8CC2A9353F1 /* SlideMenuControllerSwift-dummy.m */; };
+		47FECB1492E19C4637007F9DEBED153C /* LIHImageSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEACB53CAB14E915F33400B512C76F11 /* LIHImageSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BF545E187D666AEB22F8B99B633570B /* LIHImageSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA50CBFDEBE4FBA4FC7404DE5F65722 /* LIHImageSlider-dummy.m */; };
+		4E1414275B5089D7528006424F7E90A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		56528215BA97DBCEBDEFDAF112B3B28B /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D01E5506DD0C83FED81B902F3D75126 /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3DC1F13F930383CB76C8FE880A892B2 /* LIHSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27CF94D2B0BE6A969B410E6544EBF1 /* LIHSlider.swift */; };
+		A991B65609F9C072AEF18F03C1D0F303 /* Pods-Appear-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C7CEC6B22EC7293CECA590A172042C /* Pods-Appear-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D554CA36B9FC1DAA1096A1B5AAEB8A12 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA70EF4C1DB2C58C5D68C54B89478C3 /* SlideMenuController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57FDC43989C9CA00CEFC6F51893FB7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD908CE0E44EF8C967DEA87AFA0FB716;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		EABB833DE01BE697FDCBD800C325486A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 207656909A49887CE8C71E756AB7770A;
+			remoteInfo = LIHImageSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		105DDA7294B11AE6F54C242F4C46B5DA /* Pods-Appear.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Appear.modulemap"; sourceTree = "<group>"; };
+		1AA70EF4C1DB2C58C5D68C54B89478C3 /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		2BC646E19FF1A8FC27E9355B6350D610 /* Pods-Appear-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Appear-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AC3C3E15D96F79E6A7C5DE86550AFA0 /* Pods-Appear-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Appear-dummy.m"; sourceTree = "<group>"; };
+		4B4CD40121268FFDFE2FE463FD494FDB /* Pods-Appear-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Appear-resources.sh"; sourceTree = "<group>"; };
+		4DE1FFF47B47C9DBB448142731839752 /* Pods-Appear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Appear.debug.xcconfig"; sourceTree = "<group>"; };
+		5173751B0A1F51E0E8C3B2095E172D4D /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
+		58E26EA02D56450FDAC668024A348D09 /* Pods_Appear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Appear.framework; path = "Pods-Appear.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D01E5506DD0C83FED81B902F3D75126 /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		762F2E1C5D37BDAEDD7458E57BA790BC /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
+		7D0B5206A567618745555AA74A76E804 /* LIHImageSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LIHImageSlider.framework; path = LIHImageSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8426895B9599DB84F90AC289FBD2BBCD /* Pods-Appear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Appear.release.xcconfig"; sourceTree = "<group>"; };
+		845FE44F3788D3910D26355D51EEB7DE /* Pods-Appear-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Appear-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D5F43AA053F0987418DF4F46F73F5BE /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideMenuControllerSwift.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F27CF94D2B0BE6A969B410E6544EBF1 /* LIHSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSlider.swift; path = LIHImageSlider/Classes/LIHSlider.swift; sourceTree = "<group>"; };
+		A02CFEC7AB5CE4067E36F5B87E753277 /* LIHImageSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LIHImageSlider.modulemap; sourceTree = "<group>"; };
+		A3C7CEC6B22EC7293CECA590A172042C /* Pods-Appear-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Appear-umbrella.h"; sourceTree = "<group>"; };
+		A3F4A862BE115C5588EE70B3EDF63A9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5B5152BFCF1142E3FCFFAC732E9F370 /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
+		B6727970E35848ED22BF8925B1D8D245 /* Pods-Appear-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Appear-frameworks.sh"; sourceTree = "<group>"; };
+		C769B7A2707A1E2C94B5C8CC2A9353F1 /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		C88431D04701664817B2D002EF706816 /* LIHSliderItemViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSliderItemViewController.swift; path = LIHImageSlider/Classes/LIHSliderItemViewController.swift; sourceTree = "<group>"; };
+		CDA50CBFDEBE4FBA4FC7404DE5F65722 /* LIHImageSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LIHImageSlider-dummy.m"; sourceTree = "<group>"; };
+		CEACB53CAB14E915F33400B512C76F11 /* LIHImageSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIHImageSlider-umbrella.h"; sourceTree = "<group>"; };
+		D17F3A6CCBF8DB9B095131B5DAB6FD20 /* LIHImageSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIHImageSlider-prefix.pch"; sourceTree = "<group>"; };
+		D2ED65721E749CBDE4F0DD67A65A2CC1 /* LIHImageSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LIHImageSlider.xcconfig; sourceTree = "<group>"; };
+		E00888268B6E2D94BDFC0C973F486AB1 /* LIHSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSliderViewController.swift; path = LIHImageSlider/Classes/LIHSliderViewController.swift; sourceTree = "<group>"; };
+		F01764A79B3082BE1F40141498826C59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F221C514CE1B4F0D96C9A744643F2ECB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43C77906C91838F00800B53BE5302F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA6EEFF5B24FE1F352E4CBEC03EE21B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7636E2DAE166AE47E5A15E1F51645911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1414275B5089D7528006424F7E90A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72E423A6C632240CCDAD6E6D5D2607F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF6C40AA5F071BADCE2BB48773E8C4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11431F6A98AC9FEB466FA1EC49F83C0E /* SlideMenuControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1AA70EF4C1DB2C58C5D68C54B89478C3 /* SlideMenuController.swift */,
+				89101345C265C3F8D81C6586CD4EDE12 /* Support Files */,
+			);
+			name = SlideMenuControllerSwift;
+			path = SlideMenuControllerSwift;
+			sourceTree = "<group>";
+		};
+		147C5F1BB5EC422971B8A2FD1FEA4C33 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAE2257E2A2E0710CBB4C30CDF701E0 /* Pods-Appear */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3F8DCC443A9DD87D3B2533F0E7C57EAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3F4A862BE115C5588EE70B3EDF63A9E /* Info.plist */,
+				A02CFEC7AB5CE4067E36F5B87E753277 /* LIHImageSlider.modulemap */,
+				D2ED65721E749CBDE4F0DD67A65A2CC1 /* LIHImageSlider.xcconfig */,
+				CDA50CBFDEBE4FBA4FC7404DE5F65722 /* LIHImageSlider-dummy.m */,
+				D17F3A6CCBF8DB9B095131B5DAB6FD20 /* LIHImageSlider-prefix.pch */,
+				CEACB53CAB14E915F33400B512C76F11 /* LIHImageSlider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LIHImageSlider";
+			sourceTree = "<group>";
+		};
+		61776BB01580280E9AB694988463C212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D0B5206A567618745555AA74A76E804 /* LIHImageSlider.framework */,
+				58E26EA02D56450FDAC668024A348D09 /* Pods_Appear.framework */,
+				8D5F43AA053F0987418DF4F46F73F5BE /* SlideMenuControllerSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E948768B4E92691C180AFBC3B6B7D378 /* Pods */,
+				61776BB01580280E9AB694988463C212 /* Products */,
+				147C5F1BB5EC422971B8A2FD1FEA4C33 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89101345C265C3F8D81C6586CD4EDE12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F221C514CE1B4F0D96C9A744643F2ECB /* Info.plist */,
+				5173751B0A1F51E0E8C3B2095E172D4D /* SlideMenuControllerSwift.modulemap */,
+				A5B5152BFCF1142E3FCFFAC732E9F370 /* SlideMenuControllerSwift.xcconfig */,
+				C769B7A2707A1E2C94B5C8CC2A9353F1 /* SlideMenuControllerSwift-dummy.m */,
+				762F2E1C5D37BDAEDD7458E57BA790BC /* SlideMenuControllerSwift-prefix.pch */,
+				6D01E5506DD0C83FED81B902F3D75126 /* SlideMenuControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlideMenuControllerSwift";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DCAE2257E2A2E0710CBB4C30CDF701E0 /* Pods-Appear */ = {
+			isa = PBXGroup;
+			children = (
+				F01764A79B3082BE1F40141498826C59 /* Info.plist */,
+				105DDA7294B11AE6F54C242F4C46B5DA /* Pods-Appear.modulemap */,
+				2BC646E19FF1A8FC27E9355B6350D610 /* Pods-Appear-acknowledgements.markdown */,
+				845FE44F3788D3910D26355D51EEB7DE /* Pods-Appear-acknowledgements.plist */,
+				3AC3C3E15D96F79E6A7C5DE86550AFA0 /* Pods-Appear-dummy.m */,
+				B6727970E35848ED22BF8925B1D8D245 /* Pods-Appear-frameworks.sh */,
+				4B4CD40121268FFDFE2FE463FD494FDB /* Pods-Appear-resources.sh */,
+				A3C7CEC6B22EC7293CECA590A172042C /* Pods-Appear-umbrella.h */,
+				4DE1FFF47B47C9DBB448142731839752 /* Pods-Appear.debug.xcconfig */,
+				8426895B9599DB84F90AC289FBD2BBCD /* Pods-Appear.release.xcconfig */,
+			);
+			name = "Pods-Appear";
+			path = "Target Support Files/Pods-Appear";
+			sourceTree = "<group>";
+		};
+		E7DABE0AA9DD483BD66F8816661FF22D /* LIHImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				9F27CF94D2B0BE6A969B410E6544EBF1 /* LIHSlider.swift */,
+				C88431D04701664817B2D002EF706816 /* LIHSliderItemViewController.swift */,
+				E00888268B6E2D94BDFC0C973F486AB1 /* LIHSliderViewController.swift */,
+				3F8DCC443A9DD87D3B2533F0E7C57EAF /* Support Files */,
+			);
+			name = LIHImageSlider;
+			path = LIHImageSlider;
+			sourceTree = "<group>";
+		};
+		E948768B4E92691C180AFBC3B6B7D378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7DABE0AA9DD483BD66F8816661FF22D /* LIHImageSlider */,
+				11431F6A98AC9FEB466FA1EC49F83C0E /* SlideMenuControllerSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07FBF6A6840BE6E1749611A87A640BFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FECB1492E19C4637007F9DEBED153C /* LIHImageSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997E95F0BCCA6C71D9F27884440E5CF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56528215BA97DBCEBDEFDAF112B3B28B /* SlideMenuControllerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCCDFF856290F16CF77627F6633C625 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A991B65609F9C072AEF18F03C1D0F303 /* Pods-Appear-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1740877508B8073F60B913AE2F52F99B /* Pods-Appear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFAD1BF95696633079B034AFB71E0E94 /* Build configuration list for PBXNativeTarget "Pods-Appear" */;
+			buildPhases = (
+				BE13D3187872204DB2384CFB094E83DD /* Sources */,
+				F72E423A6C632240CCDAD6E6D5D2607F /* Frameworks */,
+				EBCCDFF856290F16CF77627F6633C625 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE237E0CFAC426C0AF47424E989F47BB /* PBXTargetDependency */,
+				8048DA91C84EA073668C6A33F83D5C87 /* PBXTargetDependency */,
+			);
+			name = "Pods-Appear";
+			productName = "Pods-Appear";
+			productReference = 58E26EA02D56450FDAC668024A348D09 /* Pods_Appear.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		207656909A49887CE8C71E756AB7770A /* LIHImageSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC8624D14D192CCF4C8D8E8E07C8972 /* Build configuration list for PBXNativeTarget "LIHImageSlider" */;
+			buildPhases = (
+				25339C0011BFF1CFDC664C2F05CE7643 /* Sources */,
+				7636E2DAE166AE47E5A15E1F51645911 /* Frameworks */,
+				07FBF6A6840BE6E1749611A87A640BFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LIHImageSlider;
+			productName = LIHImageSlider;
+			productReference = 7D0B5206A567618745555AA74A76E804 /* LIHImageSlider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD908CE0E44EF8C967DEA87AFA0FB716 /* SlideMenuControllerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B8D9A81342DC2D0B6CC2F21347BB7F2 /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
+			buildPhases = (
+				4539700C4950CC644A687D04DDA94021 /* Sources */,
+				43C77906C91838F00800B53BE5302F27 /* Frameworks */,
+				997E95F0BCCA6C71D9F27884440E5CF9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = 8D5F43AA053F0987418DF4F46F73F5BE /* SlideMenuControllerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 61776BB01580280E9AB694988463C212 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				207656909A49887CE8C71E756AB7770A /* LIHImageSlider */,
+				1740877508B8073F60B913AE2F52F99B /* Pods-Appear */,
+				CD908CE0E44EF8C967DEA87AFA0FB716 /* SlideMenuControllerSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25339C0011BFF1CFDC664C2F05CE7643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF545E187D666AEB22F8B99B633570B /* LIHImageSlider-dummy.m in Sources */,
+				A3DC1F13F930383CB76C8FE880A892B2 /* LIHSlider.swift in Sources */,
+				176127A4857051BD179F565E2BB0B76C /* LIHSliderItemViewController.swift in Sources */,
+				257591DD430A99371C1C0B9217465F91 /* LIHSliderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4539700C4950CC644A687D04DDA94021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D554CA36B9FC1DAA1096A1B5AAEB8A12 /* SlideMenuController.swift in Sources */,
+				45F8A5A41D13A5366179A96AEFFAC9E3 /* SlideMenuControllerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE13D3187872204DB2384CFB094E83DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7A496DFB572EECFBB6CC9396663FEE /* Pods-Appear-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8048DA91C84EA073668C6A33F83D5C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = CD908CE0E44EF8C967DEA87AFA0FB716 /* SlideMenuControllerSwift */;
+			targetProxy = 57FDC43989C9CA00CEFC6F51893FB7B9 /* PBXContainerItemProxy */;
+		};
+		EE237E0CFAC426C0AF47424E989F47BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LIHImageSlider;
+			target = 207656909A49887CE8C71E756AB7770A /* LIHImageSlider */;
+			targetProxy = EABB833DE01BE697FDCBD800C325486A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		003C9FC35A446E5EAB89993374BA171E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B5152BFCF1142E3FCFFAC732E9F370 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				PRODUCT_MODULE_NAME = SlideMenuControllerSwift;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0281568DE6BFEA8D3D11569431FC7562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B5152BFCF1142E3FCFFAC732E9F370 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				PRODUCT_MODULE_NAME = SlideMenuControllerSwift;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		11F7E9EE9D47963C5E97D85C6338158C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE1FFF47B47C9DBB448142731839752 /* Pods-Appear.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Appear/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Appear/Pods-Appear.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		289AA7C8298586F24202CD5A60BC9B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8426895B9599DB84F90AC289FBD2BBCD /* Pods-Appear.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Appear/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Appear/Pods-Appear.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B4B979C5312868F92A43BC0792FD3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2ED65721E749CBDE4F0DD67A65A2CC1 /* LIHImageSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LIHImageSlider/LIHImageSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LIHImageSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LIHImageSlider/LIHImageSlider.modulemap";
+				PRODUCT_MODULE_NAME = LIHImageSlider;
+				PRODUCT_NAME = LIHImageSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D5312727E19B5CA685E7BB4BDB7AB9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2ED65721E749CBDE4F0DD67A65A2CC1 /* LIHImageSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LIHImageSlider/LIHImageSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LIHImageSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LIHImageSlider/LIHImageSlider.modulemap";
+				PRODUCT_MODULE_NAME = LIHImageSlider;
+				PRODUCT_NAME = LIHImageSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B8D9A81342DC2D0B6CC2F21347BB7F2 /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003C9FC35A446E5EAB89993374BA171E /* Debug */,
+				0281568DE6BFEA8D3D11569431FC7562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC8624D14D192CCF4C8D8E8E07C8972 /* Build configuration list for PBXNativeTarget "LIHImageSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4B979C5312868F92A43BC0792FD3EF /* Debug */,
+				D5312727E19B5CA685E7BB4BDB7AB9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFAD1BF95696633079B034AFB71E0E94 /* Build configuration list for PBXNativeTarget "Pods-Appear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F7E9EE9D47963C5E97D85C6338158C /* Debug */,
+				289AA7C8298586F24202CD5A60BC9B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

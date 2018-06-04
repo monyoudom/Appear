@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController.swift
 //  Appear
 //
@@ -8,109 +8,136 @@
 
 import UIKit
 
-class DashboardController: UIViewController,UISearchBarDelegate {
+
+
+class DashboardController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var searchBtn: UIBarButtonItem!
-    var searchBar = UISearchBar()
-    var textFieldInsideSearchBar =  UITextField()
+    let imageArrayP = ["Angkor Wat temple","Beng Mealea temple","Koh Keh temple"]
+    let imageArrayR = ["Neak Pon temple","Sras srong","Ta Keo temple","Ta Promh temple","Tarrace of Elephant temple"]
+    let decriP = ["Angkor Wat temple","Beng Mealea temple","Angkorwat is the temple"]
+    let titleP = ["Angkor Wat temple","Beng Mealea temple","Koh Keh temple"]
+    let titleR = ["Neak Pon temple","Sras srong","Ta Keo temple","Ta Promh temple","Tarrace of Elephant"]
+    let decriR = ["50K views","2K views","100K views","1M views","10K views"]
+    @IBOutlet weak var carousel: ZKCarousel! = ZKCarousel()
+    @IBOutlet weak var popularCells: UICollectionView!
+        
+    @IBOutlet weak var recenCell: UICollectionView!
+    let sizeB : CGSize = CGSize(width: 200, height: 150)
+    @IBInspectable var shadowColor: UIColor? = UIColor.black
+    
+    var sizeA = CGSize(width: 150, height: 100)
+        
     
     
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
-        searchBar.searchBarStyle = UISearchBarStyle.minimal
-        textFieldInsideSearchBar  = (searchBar.value(forKey: "searchField") as? UITextField)!
+        popularCells.dataSource = self
+        popularCells.delegate = self
+        recenCell.dataSource = self
+        recenCell.delegate = self
+        self.navigationItem.title = "Appear"
+        let backButton = UIBarButtonItem()
+        backButton.title = nil
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        setupCarousel()
         
-    }
-    
-}
-
-// UI
-extension DashboardController {
-    func setupNavigationBar() {
-        self.searchBar.tintColor = UIColor.clear
-        self.searchBar.backgroundColor = UIColor.clear
-        self.searchBar.isTranslucent = true
-        self.textFieldInsideSearchBar.textColor = UIColor.white
-    
-        let searchBarContainer = SearchBarContainerView(customSearchBar: searchBar)
-        searchBarContainer.frame = CGRect(x: 0, y: 0, width: view.frame.width + 20, height: 60)
-        navigationItem.titleView = searchBarContainer
-    }
-    func showSearchBar() {
-        self.searchBtn.image =  UIImage(named: "cancel")
-        self.searchBtn.tag = 1
-        setupNavigationBar()
-        UIView.animate(withDuration: 0.5, animations: {
-            self.searchBar.alpha = 1
-        }, completion: { finished in
-            self.searchBar.becomeFirstResponder()
-        })
-    }
-    
-    func hideSearchBar() {
-        self.searchBtn.image =  UIImage(named: "search")
-        self.searchBtn.tag = 0
-        UIView.animate(withDuration: 0.3, animations: {
-            self.searchBar.alpha = 0
-        }, completion: nil)
-    }
-}
-
-// Action Button
-
-extension DashboardController {
-    @IBAction func searchButtonPressed(sender: AnyObject) {
-        
-        if sender.tag == 0 {
-            showSearchBar()
-        } else {
-            self.textFieldInsideSearchBar.text = ""
-           self.textFieldInsideSearchBar.endEditing(true)
-            hideSearchBar()
-        }
        
         
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNavigationBarItem()
+    }
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+        
+    func collectionView(_ collectionView: UICollectionView,
+                                     numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.recenCell {
+             return 5
+        } else {
+             return 3
+        }
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        if collectionView == self.recenCell {
+            return sizeA
+        } else {
+             return sizeB
+        }
+        
+        
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+            return 1
+    }
+   
+   
+        
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == self.popularCells {
+            let cell = popularCells.dequeueReusableCell(withReuseIdentifier: "popluarplace", for: indexPath) as! PopularCell
+            cell.layer.cornerRadius = 2
+            cell.layer.shadowOffset.height = 3
+            cell.layer.shadowOffset.width = 0
+            cell.layer.shadowOpacity = 0.5
+            cell.layer.shadowColor = shadowColor?.cgColor
+            cell.layer.borderWidth = 0.1
+            cell.imageBackground.image = UIImage(named: imageArrayP[indexPath.row])
+            cell.title.text = titleP[indexPath.row]
+            cell.decri.text = decriP[indexPath.row]
+            
+            return cell
+            
+        } else {
+             let cell = recenCell.dequeueReusableCell(withReuseIdentifier: "recencell", for: indexPath) as! RecenCell
+             cell.layer.cornerRadius = 2
+             cell.layer.shadowOffset.height = 3
+             cell.layer.shadowOffset.width = 0
+             cell.layer.shadowOpacity = 0.5
+             cell.layer.shadowColor = shadowColor?.cgColor
+             cell.layer.borderWidth = 0.1
+             cell.imageBackgroundR.image = UIImage(named: imageArrayR[indexPath.row])
+             cell.titleR.text = titleR[indexPath.row]
+             cell.decriR.text = decriR[indexPath.row]
+            
+            return cell
+            
+        }
+        
+     
+    }
+    private func setupCarousel() {
+        
+        // Create as many slides as you'd like to show in the carousel
+        let slide = ZKCarouselSlide(image: UIImage(named: "1")!, title: "", description: "Welcome to Cambodia")
+        let slide1 = ZKCarouselSlide(image: UIImage(named: "2")!, title: "", description: "Appear for you")
+        let slide2 = ZKCarouselSlide(image: UIImage(named: "3")!, title: "", description: "King dom of wonder")
+        
+        // Add the slides to the carousel
+        self.carousel.slides = [slide, slide1, slide2]
+        
+        
+        // You can optionally use the 'interval' property to set the timing for automatic slide changes. The default is 1 second.
+        self.carousel.interval = 10
+        
+        // Optional - automatic switching between slides.
+        self.carousel.start()
+    }
+   
+    
 }
-
-// HELP Class
-extension DashboardController {
-    
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}
-// set SearchBar height and width
-class SearchBarContainerView: UIView {
-    
-    let searchBar: UISearchBar
-    
-    init(customSearchBar: UISearchBar) {
-        searchBar = customSearchBar
-        super.init(frame: CGRect.zero)
-        addSubview(searchBar)
-    }
-    
-    override convenience init(frame: CGRect) {
-        self.init(customSearchBar: UISearchBar())
-        self.frame = frame
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        searchBar.frame = bounds
-    }
-}
-
-    
     
 
     
