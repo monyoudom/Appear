@@ -713,6 +713,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     
     @IBAction func Dismiss(_ sender: Any) {
+         audioPlayer.stop();
         
         self.dismiss(animated: true,completion: nil) 
     }

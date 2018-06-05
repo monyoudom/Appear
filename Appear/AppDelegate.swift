@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearace = UINavigationBar.appearance()
           navigationBarAppearace.tintColor = UIColor.black  // Back buttons and such
 //        navigationBarAppearace.titleTextAttributes = [kCTForegroundColorAttributeName as NSAttributedStringKey:UIColor.white]
+        
+        
         self.create()
         return true
     }

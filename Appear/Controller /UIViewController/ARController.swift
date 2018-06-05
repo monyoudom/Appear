@@ -14,11 +14,10 @@ class ARController: UIViewController {
     @IBOutlet weak var sceneView: ARSCNView!
     var check : Bool = false
     
-    @IBOutlet weak var status: UIButton!
-    
     @IBOutlet weak var switchBtn: UISwitch!
     
-
+    
+    @IBOutlet weak var AddObject: UIButton!
     lazy var fadeAction: SCNAction = {
         return .sequence([
             .fadeOpacity(by: 0.8, duration: 0.3),
@@ -26,21 +25,14 @@ class ARController: UIViewController {
             .fadeOut(duration: 3)
             ])
     }()
-    lazy var mountainNode: SCNNode = {
-        guard let scene = SCNScene(named: "model.obj"),
-            let node = scene.rootNode.childNode(withName: "model", recursively: false) else { return SCNNode() }
-        let scaleFactor  = 0.25
-        node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
-        node.eulerAngles.x += -.pi / 2
-        return node
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addTapGestureToSceneView()
+        self.navigationItem.title = "Angkor AR"
+        AddObject.isHidden = true
         switchBtn.isOn = false
         sceneView.allowsCameraControl = false
+        addTapGestureToSceneView()
         
         configureLighting()
     }
@@ -72,7 +64,6 @@ class ARController: UIViewController {
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
     }
-    
     @objc func addShipToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer) {
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
@@ -83,14 +74,15 @@ class ARController: UIViewController {
         let y = translation.y
         let z = translation.z
         
-        guard let shipScene = SCNScene(named: "win.scn"),
-            let shipNode = shipScene.rootNode.childNode(withName: "temple", recursively: false)
+        guard let shipScene = SCNScene(named: "angkorwat.scn"),
+            let shipNode = shipScene.rootNode.childNode(withName: "angkorwat", recursively: false)
             else {
                 print("Why")
                 
                 return }
         
-        
+        shipNode.eulerAngles.x = -.pi/2
+        shipNode.eulerAngles.y = -.pi/2
         shipNode.position = SCNVector3(x,y,z)
         sceneView.scene.rootNode.addChildNode(shipNode)
     }
@@ -99,6 +91,8 @@ class ARController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARController.addShipToSceneView(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+    
     
     
     @IBAction func SwitchAction(_ sender: UISwitch) {
@@ -133,41 +127,39 @@ extension ARController: ARSCNViewDelegate {
         
        
         if anchor.isMember(of: ARPlaneAnchor.self) {
-            
             if switchBtn.isOn {
                 if !check {
                     check = true
                     guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-
+                    
                     // 2
                     let width = CGFloat(planeAnchor.extent.x)
                     let height = CGFloat(planeAnchor.extent.z)
                     let plane = SCNPlane(width: width, height: height)
-
+                    
                     // 3
                     plane.materials.first?.diffuse.contents = UIColor.transparentLightBlue
-
+                    
                     // 4
                     let planeNode = SCNNode(geometry: plane)
-
+                    
                     // 5
                     let x = CGFloat(planeAnchor.center.x)
                     let y = CGFloat(planeAnchor.center.y)
                     let z = CGFloat(planeAnchor.center.z)
                     planeNode.position = SCNVector3(x,y,z)
                     planeNode.eulerAngles.x = -.pi / 2
-
+                    
                     // 6
                     node.addChildNode(planeNode)
-
+                    
                 }
-
-
             }
-            
-            
         } else {
-
+            let when = DispatchTime.now() + 1// change 2 to desired number of seconds
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.AddObject.isHidden = false
+            }
             let imageAnchor = anchor as? ARImageAnchor
             
             // TODO: Comment out code
@@ -197,32 +189,11 @@ extension ARController: ARSCNViewDelegate {
     
     
     func getPlaneNode(withReferenceImage image: ARReferenceImage) -> SCNNode {
-        
         let plane = SCNPlane(width: image.physicalSize.width,
                              height: image.physicalSize.height)
         let node = SCNNode(geometry: plane)
         return node
     }
-    
-//    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-//        // 1
-//        guard let planeAnchor = anchor as?  ARPlaneAnchor,
-//            let planeNode = node.childNodes.first,
-//            let plane = planeNode.geometry as? SCNPlane
-//            else { return }
-//
-//        // 2
-//        let width = CGFloat(planeAnchor.extent.x)
-//        let height = CGFloat(planeAnchor.extent.z)
-//        plane.width = width
-//        plane.height = height
-//
-//        // 3
-//        let x = CGFloat(planeAnchor.center.x)
-//        let y = CGFloat(planeAnchor.center.y)
-//        let z = CGFloat(planeAnchor.center.z)
-//        planeNode.position = SCNVector3(x, y, z)
-//    }
 }
 
 
