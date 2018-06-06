@@ -55,6 +55,7 @@ class VirtualObjectSelectionViewController: UITableViewController {
             let vc = storyboard.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
             UIApplication.topViewController()?.present(vc, animated: true)
             
+            
             break
         case 1:
             let vc = storyboard.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
@@ -64,16 +65,29 @@ class VirtualObjectSelectionViewController: UITableViewController {
 //            let vc = storyboard.instantiateViewController(withIdentifier: "VideoController") as! VideoController
 //            UIApplication.topViewController()?.present(vc, animated: true)
             
-            
-            if let path = Bundle.main.path(forResource: "video", ofType: "mp4")
-            {
-                let video = AVPlayer(url:URL(fileURLWithPath: path))
-                let videoPlayer = AVPlayerViewController()
-                videoPlayer.player = video
-                present(videoPlayer, animated: true) {
-                    video.play()
+            if !contantCheck {
+                if let path = Bundle.main.path(forResource: "c", ofType: "mp4")
+                {
+                    let video = AVPlayer(url:URL(fileURLWithPath: path))
+                    let videoPlayer = AVPlayerViewController()
+                    videoPlayer.player = video
+                    present(videoPlayer, animated: true) {
+                        video.play()
+                    }
+                }
+                
+            } else {
+                if let path = Bundle.main.path(forResource: "angkorwatP", ofType: "mp4")
+                {
+                    let video = AVPlayer(url:URL(fileURLWithPath: path))
+                    let videoPlayer = AVPlayerViewController()
+                    videoPlayer.player = video
+                    present(videoPlayer, animated: true) {
+                        video.play()
+                    }
                 }
             }
+            
             break
         }
         if indexPath.row == 0  {

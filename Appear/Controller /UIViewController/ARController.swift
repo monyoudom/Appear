@@ -18,6 +18,7 @@ class ARController: UIViewController {
     
     
     @IBOutlet weak var AddObject: UIButton!
+    var turnOff :Bool = true
     lazy var fadeAction: SCNAction = {
         return .sequence([
             .fadeOpacity(by: 0.8, duration: 0.3),
@@ -96,12 +97,27 @@ class ARController: UIViewController {
     
     
     @IBAction func SwitchAction(_ sender: UISwitch) {
+       
         
         if sender.isOn {
-            self.switchBtn.isOn = true
-            
+            turnOff = true
+            contantCheck = true
+            sceneView.session.pause()
+            sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+                node.removeFromParentNode()
+            }
+            setUpSceneView()
+
+
+
         } else {
-            self.switchBtn.isOn = false
+            turnOff = false
+            contantCheck = false
+            sceneView.session.pause()
+            sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+                node.removeFromParentNode()
+            }
+            setUpSceneView()
         }
     }
     
@@ -127,9 +143,6 @@ extension ARController: ARSCNViewDelegate {
         
        
         if anchor.isMember(of: ARPlaneAnchor.self) {
-            if switchBtn.isOn {
-                if !check {
-                    check = true
                     guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
                     
                     // 2
@@ -153,8 +166,6 @@ extension ARController: ARSCNViewDelegate {
                     // 6
                     node.addChildNode(planeNode)
                     
-                }
-            }
         } else {
             let when = DispatchTime.now() + 1// change 2 to desired number of seconds
             DispatchQueue.main.asyncAfter(deadline: when) {

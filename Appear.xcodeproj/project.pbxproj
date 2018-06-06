@@ -13,6 +13,10 @@
 		C50A4B9720C6EE8100EFEDFD /* AngkorWatTex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C50A4B9620C6EE8100EFEDFD /* AngkorWatTex.jpg */; };
 		C50A4B9920C6F0D800EFEDFD /* angkorwat.dae in Resources */ = {isa = PBXBuildFile; fileRef = C50A4B9820C6F0D700EFEDFD /* angkorwat.dae */; };
 		C50A4B9B20C6F10200EFEDFD /* angkorwat.scn in Resources */ = {isa = PBXBuildFile; fileRef = C50A4B9A20C6F10200EFEDFD /* angkorwat.scn */; };
+		C50A4B9D20C84CBE00EFEDFD /* demo2.png in Resources */ = {isa = PBXBuildFile; fileRef = C50A4B9C20C84CBE00EFEDFD /* demo2.png */; };
+		C50A4B9F20C84CDF00EFEDFD /* angkorP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C50A4B9E20C84CDF00EFEDFD /* angkorP.mp3 */; };
+		C50A4BA220C8535A00EFEDFD /* Churning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C50A4BA120C8535A00EFEDFD /* Churning.mp3 */; };
+		C50A4BA620C8586300EFEDFD /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = C50A4BA520C8586200EFEDFD /* demo1.png */; };
 		C51DAA6820C2F4F800FD2B29 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51DAA6720C2F4F800FD2B29 /* Screen.swift */; };
 		C51DAA6A20C3056C00FD2B29 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51DAA6920C3056C00FD2B29 /* ContentViewController.swift */; };
 		C51DAA6C20C3058100FD2B29 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51DAA6B20C3058100FD2B29 /* AudioController.swift */; };
@@ -22,12 +26,6 @@
 		C52601EB2088340500CBC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52601E92088340500CBC664 /* Main.storyboard */; };
 		C52601F02088340500CBC664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52601EE2088340500CBC664 /* LaunchScreen.storyboard */; };
 		C534B69720C5745000E4661F /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = C534B69620C5745000E4661F /* list.plist */; };
-		C534B6A120C5754100E4661F /* Beat It.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C534B69A20C5754100E4661F /* Beat It.mp3 */; };
-		C534B6A220C5754100E4661F /* Billie Jean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C534B69B20C5754100E4661F /* Billie Jean.mp3 */; };
-		C534B6A320C5754100E4661F /* Baby Be Mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C534B69C20C5754100E4661F /* Baby Be Mine.mp3 */; };
-		C534B6A420C5754100E4661F /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B69E20C5754100E4661F /* demo1.png */; };
-		C534B6A520C5754100E4661F /* demo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C534B69F20C5754100E4661F /* demo3.jpg */; };
-		C534B6A620C5754100E4661F /* demo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C534B6A020C5754100E4661F /* demo2.jpg */; };
 		C534B6B220C5754900E4661F /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B6A820C5754900E4661F /* background2.png */; };
 		C534B6B320C5754900E4661F /* shuffle_s.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B6A920C5754900E4661F /* shuffle_s.png */; };
 		C534B6B420C5754900E4661F /* repeat_s.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B6AA20C5754900E4661F /* repeat_s.png */; };
@@ -38,7 +36,6 @@
 		C534B6B920C5754900E4661F /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B6AF20C5754900E4661F /* shadow.png */; };
 		C534B6BA20C5754900E4661F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B6B020C5754900E4661F /* play.png */; };
 		C534B6BB20C5754900E4661F /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = C534B6B120C5754900E4661F /* previous.png */; };
-		C534B6C020C5805D00E4661F /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C534B6BF20C5805D00E4661F /* video.mp4 */; };
 		C5391AB820956C0E00556279 /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5391AB720956C0E00556279 /* ARController.swift */; };
 		C5391ABB20956EEE00556279 /* PlaneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5391ABA20956EEE00556279 /* PlaneSceneView.swift */; };
 		C5391AC32095760200556279 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5391AC22095760200556279 /* NavigationService.swift */; };
@@ -68,6 +65,12 @@
 		C50A4B9620C6EE8100EFEDFD /* AngkorWatTex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AngkorWatTex.jpg; sourceTree = "<group>"; };
 		C50A4B9820C6F0D700EFEDFD /* angkorwat.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = angkorwat.dae; sourceTree = "<group>"; };
 		C50A4B9A20C6F10200EFEDFD /* angkorwat.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = angkorwat.scn; sourceTree = "<group>"; };
+		C50A4B9C20C84CBE00EFEDFD /* demo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo2.png; sourceTree = "<group>"; };
+		C50A4B9E20C84CDF00EFEDFD /* angkorP.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = angkorP.mp3; sourceTree = "<group>"; };
+		C50A4BA020C8533100EFEDFD /* angkorwatP.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = angkorwatP.mp4; sourceTree = "<group>"; };
+		C50A4BA120C8535A00EFEDFD /* Churning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Churning.mp3; sourceTree = "<group>"; };
+		C50A4BA520C8586200EFEDFD /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo1.png; sourceTree = "<group>"; };
+		C50A4BA720C8592D00EFEDFD /* c.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = c.mp4; sourceTree = "<group>"; };
 		C51DAA6720C2F4F800FD2B29 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		C51DAA6920C3056C00FD2B29 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		C51DAA6B20C3058100FD2B29 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
@@ -79,12 +82,6 @@
 		C52601EF2088340500CBC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C52601F12088340500CBC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C534B69620C5745000E4661F /* list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = list.plist; sourceTree = "<group>"; };
-		C534B69A20C5754100E4661F /* Beat It.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Beat It.mp3"; sourceTree = "<group>"; };
-		C534B69B20C5754100E4661F /* Billie Jean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Billie Jean.mp3"; sourceTree = "<group>"; };
-		C534B69C20C5754100E4661F /* Baby Be Mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Baby Be Mine.mp3"; sourceTree = "<group>"; };
-		C534B69E20C5754100E4661F /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo1.png; sourceTree = "<group>"; };
-		C534B69F20C5754100E4661F /* demo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo3.jpg; sourceTree = "<group>"; };
-		C534B6A020C5754100E4661F /* demo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo2.jpg; sourceTree = "<group>"; };
 		C534B6A820C5754900E4661F /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		C534B6A920C5754900E4661F /* shuffle_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuffle_s.png; sourceTree = "<group>"; };
 		C534B6AA20C5754900E4661F /* repeat_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat_s.png; sourceTree = "<group>"; };
@@ -95,7 +92,6 @@
 		C534B6AF20C5754900E4661F /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		C534B6B020C5754900E4661F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		C534B6B120C5754900E4661F /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
-		C534B6BF20C5805D00E4661F /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		C5391AB720956C0E00556279 /* ARController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
 		C5391ABA20956EEE00556279 /* PlaneSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneSceneView.swift; sourceTree = "<group>"; };
 		C5391AC22095760200556279 /* NavigationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
@@ -237,9 +233,8 @@
 		C534B69920C5754100E4661F /* music */ = {
 			isa = PBXGroup;
 			children = (
-				C534B69A20C5754100E4661F /* Beat It.mp3 */,
-				C534B69B20C5754100E4661F /* Billie Jean.mp3 */,
-				C534B69C20C5754100E4661F /* Baby Be Mine.mp3 */,
+				C50A4BA120C8535A00EFEDFD /* Churning.mp3 */,
+				C50A4B9E20C84CDF00EFEDFD /* angkorP.mp3 */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -247,9 +242,8 @@
 		C534B69D20C5754100E4661F /* Album Artwork */ = {
 			isa = PBXGroup;
 			children = (
-				C534B69E20C5754100E4661F /* demo1.png */,
-				C534B69F20C5754100E4661F /* demo3.jpg */,
-				C534B6A020C5754100E4661F /* demo2.jpg */,
+				C50A4BA520C8586200EFEDFD /* demo1.png */,
+				C50A4B9C20C84CBE00EFEDFD /* demo2.png */,
 			);
 			path = "Album Artwork";
 			sourceTree = "<group>";
@@ -257,7 +251,8 @@
 		C534B6A720C5754900E4661F /* Asset */ = {
 			isa = PBXGroup;
 			children = (
-				C534B6BF20C5805D00E4661F /* video.mp4 */,
+				C50A4BA020C8533100EFEDFD /* angkorwatP.mp4 */,
+				C50A4BA720C8592D00EFEDFD /* c.mp4 */,
 				C534B6A820C5754900E4661F /* background2.png */,
 				C534B6A920C5754900E4661F /* shuffle_s.png */,
 				C534B6AA20C5754900E4661F /* repeat_s.png */,
@@ -426,25 +421,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C534B6A220C5754100E4661F /* Billie Jean.mp3 in Resources */,
 				C534B69720C5745000E4661F /* list.plist in Resources */,
 				C534B6B920C5754900E4661F /* shadow.png in Resources */,
 				C559B2C320C5A32A003B2FF6 /* win.scn in Resources */,
 				C534B6B420C5754900E4661F /* repeat_s.png in Resources */,
 				C534B6B320C5754900E4661F /* shuffle_s.png in Resources */,
 				C534B6B220C5754900E4661F /* background2.png in Resources */,
-				C534B6C020C5805D00E4661F /* video.mp4 in Resources */,
+				C50A4B9D20C84CBE00EFEDFD /* demo2.png in Resources */,
+				C50A4BA620C8586300EFEDFD /* demo1.png in Resources */,
 				C534B6BA20C5754900E4661F /* play.png in Resources */,
 				C534B6B820C5754900E4661F /* next.png in Resources */,
-				C534B6A420C5754100E4661F /* demo1.png in Resources */,
 				C50A4B9B20C6F10200EFEDFD /* angkorwat.scn in Resources */,
-				C534B6A620C5754100E4661F /* demo2.jpg in Resources */,
-				C534B6A520C5754100E4661F /* demo3.jpg in Resources */,
-				C534B6A120C5754100E4661F /* Beat It.mp3 in Resources */,
 				C50A4B9720C6EE8100EFEDFD /* AngkorWatTex.jpg in Resources */,
+				C50A4B9F20C84CDF00EFEDFD /* angkorP.mp3 in Resources */,
 				C50761A420C41F7400E07AE8 /* Image3.jpg in Resources */,
 				C52601F02088340500CBC664 /* LaunchScreen.storyboard in Resources */,
-				C534B6A320C5754100E4661F /* Baby Be Mine.mp3 in Resources */,
+				C50A4BA220C8535A00EFEDFD /* Churning.mp3 in Resources */,
 				C534B6B720C5754900E4661F /* pause.png in Resources */,
 				C50761A020C41BA400E07AE8 /* Assets.xcassets in Resources */,
 				C50A4B9920C6F0D800EFEDFD /* angkorwat.dae in Resources */,

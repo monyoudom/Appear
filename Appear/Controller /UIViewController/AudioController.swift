@@ -23,6 +23,11 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     //Choose background here. Between 1 - 7
     let selectedBackground = 1
     
+    let arraySongTitile = ["Story","Angkorwat"]
+    let arrayDic  = ["Churning of the ocean","Angkorwat temple"]
+    let arrayCurrentAudio = ["Churning","angkorP"]
+    let arrayAblum = ["demo1","demo2"]
+//    let arrayAblumImage = ["demo1","demo2"]
     
     var audioPlayer:AVAudioPlayer! = nil
     var currentAudio = ""
@@ -47,7 +52,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     @IBOutlet weak var artistNameLabel: UILabel!
     @IBOutlet weak var albumNameLabel: UILabel!
     @IBOutlet var songNameLabel : UILabel!
-    @IBOutlet var songNameLabelPlaceHolder : UILabel!
+
     @IBOutlet var progressTimerLabel : UILabel!
     @IBOutlet var playerProgressSlider : UISlider!
     @IBOutlet var totalLengthOfAudioLabel : UILabel!
@@ -56,8 +61,6 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     @IBOutlet var nextButton : UIButton!
     @IBOutlet var listButton : UIButton!
     @IBOutlet var tableView : UITableView!
-    @IBOutlet var blurImageView : UIImageView!
-    @IBOutlet var enhancer : UIView!
     @IBOutlet var tableViewContainer : UIView!
     
     @IBOutlet weak var shuffleButton: UIButton!
@@ -73,8 +76,8 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     // This shows media info on lock screen - used currently and perform controls
     func showMediaInfo(){
-        let artistName = readArtistNameFromPlist(currentAudioIndex)
-        let songName = readSongNameFromPlist(currentAudioIndex)
+        let artistName = "Angkorwat"
+        let songName = "angkorP"
         MPNowPlayingInfoCenter.default().nowPlayingInfo = [MPMediaItemPropertyArtist : artistName,  MPMediaItemPropertyTitle : songName]
     }
     
@@ -102,30 +105,23 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     // MARK: - UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
+        return 2;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return audioList.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
-        var songNameDict = NSDictionary();
-        songNameDict = audioList.object(at: (indexPath as NSIndexPath).row) as! NSDictionary
-        let songName = songNameDict.value(forKey: "songName") as! String
-        
-        var albumNameDict = NSDictionary();
-        albumNameDict = audioList.object(at: (indexPath as NSIndexPath).row) as! NSDictionary
-        let albumName = albumNameDict.value(forKey: "albumName") as! String
         
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
         cell.textLabel?.font = UIFont(name: "BodoniSvtyTwoITCTT-BookIta", size: 25.0)
         cell.textLabel?.textColor = UIColor.white
-        cell.textLabel?.text = songName
+        cell.textLabel?.text = "tesing"
         
         cell.detailTextLabel?.font = UIFont(name: "BodoniSvtyTwoITCTT-Book", size: 16.0)
         cell.detailTextLabel?.textColor = UIColor.white
-        cell.detailTextLabel?.text = albumName
+        cell.detailTextLabel?.text = "tesing"
         return cell
     }
     
@@ -318,9 +314,14 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     //Sets audio file URL
     func setCurrentAudioPath(){
-        currentAudio = readSongNameFromPlist(currentAudioIndex)
+        if !contantCheck {
+            currentAudio = arrayCurrentAudio[0]
+            
+        } else {
+            currentAudio = arrayCurrentAudio[1]
+            
+        }
         currentAudioPath = URL(fileURLWithPath: Bundle.main.path(forResource: currentAudio, ofType: "mp3")!)
-        print("\(currentAudioPath)")
     }
     
     
@@ -543,22 +544,35 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     
     func updateArtistNameLabel(){
-        let artistName = readArtistNameFromPlist(currentAudioIndex)
-        artistNameLabel.text = artistName
+        if !contantCheck {
+            artistNameLabel.text = arraySongTitile[0]
+        } else {
+            artistNameLabel.text = arraySongTitile[1]
+        }
+        
     }
     func updateAlbumNameLabel(){
-        let albumName = readAlbumNameFromPlist(currentAudioIndex)
-        albumNameLabel.text = albumName
+      albumNameLabel.text = "Angkorwat"
+        
     }
     
     func updateSongNameLabel(){
-        let songName = readSongNameFromPlist(currentAudioIndex)
-        songNameLabel.text = songName
+        if !contantCheck {
+            songNameLabel.text = arrayDic[0]
+        } else {
+            songNameLabel.text = arrayDic[1]
+        }
+        
+
     }
     
     func updateAlbumArtwork(){
-        let artworkName = readArtworkNameFromPlist(currentAudioIndex)
-        albumArtworkImageView.image = UIImage(named: artworkName)
+        if !contantCheck {
+           albumArtworkImageView.image = UIImage(named:"demo1" )
+        } else {
+            albumArtworkImageView.image = UIImage(named:"demo2" )
+        }
+       
     }
     
     

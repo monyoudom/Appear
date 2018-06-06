@@ -3,6 +3,8 @@
 import UIKit
 import SlideMenuControllerSwift
 
+var contantCheck : Bool = false
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
